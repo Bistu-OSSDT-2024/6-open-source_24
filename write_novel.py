@@ -35,7 +35,7 @@ class Novel(BaseModel):
     user_group: str = Field(default="...", description="The user group of the novel.")
     outlines: List[str] = Field(
         default=["Chapter 1: ...", "Chapter 2: ...", "Chapter 3: ..."],
-        description="The outlines of the novel. No more than 10 chapters.",
+        description="The outlines of the novel. No more than 5 chapters.",
     )
     background: str = Field(default="...", description="The background of the novel.")
     character_names: List[str] = Field(default=["Frodo", "Gandalf", "Sauron"], description="The characters.")
